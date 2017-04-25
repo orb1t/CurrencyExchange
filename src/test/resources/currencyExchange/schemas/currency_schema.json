@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Currency",
+  "description": "A Currency for Exchange",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for a Currency",
+      "type": "integer"
+    },
+    "code": {
+      "description": "Short Code of a Currency",
+      "type": "string"
+    },
+    "country": {
+      "description": "Full name of a Country",
+      "type": "string"
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    }
+  },
+  "required": ["id", "code", "country", "value"]
+}
